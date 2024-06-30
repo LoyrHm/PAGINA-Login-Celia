@@ -9,17 +9,22 @@
 }
 
 body{
+    background-image: url(/img/Muro.jpg) ;
     background-color: var(--cinza1);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:110%;
 }
 
 .header{
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 8em;
     background-color: var(--azulCélia);
     align-items: center;
     justify-content: center;
-    padding: 0 10em ;
+    padding: 0 0em ;
 }
 
 .logo{
@@ -27,6 +32,7 @@ body{
 }
 
 .nav{
+    position: relative;
     display: flex;
     background-color: #486fe2 ;
     flex-direction: row;
@@ -55,3 +61,25 @@ a:hover {
     background-color: #2151e1;
     transition: 0.5s;
 }
+
+
+.div1{
+    top: 60%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.back2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 12vw;
+    background-color: var(--cinza1);
+}
+
