@@ -1,76 +1,85 @@
+* { margin:0%;
+    padding: 0%;
+    left: 0%;
+}
+
+:root{
+    --azulCélia: #4b74f2 ;
+    --cinza1: #cecece ; 
+}
+
 body{
-    background-color: rgb(233, 233, 233);
+    background-image: url(/img/Muro.jpg) ;
+    background-color: var(--cinza1);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:110%;
 }
 
-.Home{
-    position: absolute;
-    background-color: rgb(7, 139, 226);
-    color: white;
-    width: 100%;
-    height: 11%;
-    left: 0px;
-    top: 0%;
-    text-align: center;
-
-}
-
-#div1 {
-    width: 100%;
-}
-
-
-.logo {
-    position: absolute ;
-    width: 6%;
-    left: 5%;
-}
-
-#titulo{
-    font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: absolute;
-    left: 12%;
-    top: 30%;
-}
-
-.nav {
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    left: 65%;
-    top: 1%;
+.header{
+    position: relative;
     display: flex;
+    flex-direction: row;
+    height: 8em;
+    background-color: var(--azulCélia);
     align-items: center;
+    justify-content: center;
+    padding: 0 0em ;
 }
 
-ul {
-    top: 23%;
-    position: absolute;
-    left: 44%;
+.logo{
+    width: 8em;
+}
+
+.nav{
+    position: relative;
     display: flex;
-    list-style-type: none; 
-    gap: 15%;
-    }
+    background-color: #486fe2 ;
+    flex-direction: row;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    height: 3em;
+    justify-content: center ;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0em;
+    font-size: 18px;
+}
 a{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:none ;
+    color: var(--cinza1);
+    padding: 14px 9.6vw 14px;
+    margin: 0%;
+    border-radius: 0em;}
+
+a:hover {
+
+    background-color: #2151e1;
+    transition: 0.5s;
 }
 
-a:hover{
-    color: #afafaf;
- border-bottom: 2px solid #afafaf;
-}
 
-
-/*ESTA CLASSE TEXT SERVE PARA CRIAR O INDICADOR DE TROCA DE PAGINA (Podem deletar quando estiver o conteudo Pronto)*/
-.text {
-    top: 10%;
-    position: absolute;
-    background-color: aqua;
+.div1{
+    top: 60%;
     width: 100%;
-    left: 0px;
-    text-align: center;
-    color: black;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
 }
+
+.back2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 12vw;
+    background-color: var(--cinza1);
+}
+
